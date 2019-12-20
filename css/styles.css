@@ -1,8 +1,191 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 * {
 	box-sizing: border-box;
 }
 
-header {
-    background-color: lightgrey;
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
 }
 
+header {
+    background-color: ghostwhite;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    line-height: 10px;
+    margin: 5px;
+    font-size: larger;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+p,
+.profile-intro {
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    padding: 0 20px 15px 20px;
+}
+
+.profile-intro {
+    padding: 40px 0;
+}
+
+img {
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    margin: 50px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+
+li.nav-item {
+    list-style-type: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container-end {
+    padding: 50px 0;
+    background-color: ghostwhite;
+}
+
+.name {
+    font-size: 2em;
+    margin-top: 0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 15px 15px;
+}
+
+.profile-pic {
+    width: 80%;
+    margin-top: 3em;
+}
+
+.main-footer {
+    background-color: ghostwhite;
+    padding-bottom: 20px;
+}
+
+.footer {
+    font-size: 20px;
+}
+
+.footer-name {
+    float: left;
+    padding-left: 10px;  
+}
+
+.footer-nav {
+    display: none;
+}
+
+.top {
+    float: right;
+    padding-right: 10px;
+}
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .name,
+      .main-nav {
+        float: center;
+      }
+
+      .main-nav li {
+        display: inline-block;
+      }
+
+      .profile-pic {
+          float: right;
+          width: 40%;
+      }
+
+      .profile-intro {
+          float: left;
+      }
+
+      .icons {
+        float: left;
+        width: 50%;
+      }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+    
+    .one,
+    .three,
+    .four,
+    .six {
+        width: 33%;
+    }
+
+    .two,
+    .five {
+        width: 34%;
+    }
+
+}
