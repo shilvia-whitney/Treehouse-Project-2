@@ -49,7 +49,7 @@ p {
 }
 
 img {
-    max-width: 90%;
+    max-width: 95%;
     display: flex;
     margin: 0 auto;
 }
@@ -70,6 +70,10 @@ h3 {
 
 li.nav-item {
     list-style-type: none;
+}
+
+hr {
+    display: none;
 }
 
 /* ================================= 
@@ -144,16 +148,22 @@ li.nav-item {
     .container {
         width: 90%;
         margin: 0 auto;
-        
+        padding-bottom: 30px;
       }
 
       .name,
       .main-nav {
         float: center;
+        text-align: center;
+        margin: 0;
       }
 
       .main-nav li {
         display: inline-block;
+      }
+
+      a {
+        background-color: unset;
       }
 
       .profile-pic {
@@ -162,12 +172,41 @@ li.nav-item {
       }
 
       .profile-intro {
-          float: left;
+          text-align: left;
       }
 
       .icons {
         float: left;
         width: 50%;
+      }
+
+      .info-paragraph {
+          padding: 0 6em 20px 6em;
+      }
+
+      hr {
+          display: flex;
+          width: 90%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+          background-color: ghostwhite;
+      }
+
+      .footer-name {
+          margin-left: 30px;
+      }
+
+      .top {
+          display: none;
+      }
+
+      .footer-nav {
+          display: inline-flex;
+          float: right;
+          margin: 0 30px 50px 0;
+          text-decoration: none;
+          list-style-type: none;
+          font-size: medium;
       }
 }
 
@@ -177,6 +216,18 @@ li.nav-item {
         max-width: 1150px;
     }
     
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .profile-intro {
+        display: inline-block;
+    }
+
     .one,
     .three,
     .four,
@@ -186,7 +237,7 @@ li.nav-item {
 
     .two,
     .five {
-        width: 34%;
+        width: 33%;
     }
 
 }
