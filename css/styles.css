@@ -168,11 +168,19 @@ hr {
 
       .profile-pic {
           float: right;
-          width: 40%;
+          width: 45%;
       }
 
       .profile-intro {
           text-align: left;
+          display: inline-block;
+          max-width: 50%;
+          float: left;
+      }
+
+      .body {
+        width: 90%;
+        margin: 0 auto;
       }
 
       .icons {
@@ -214,18 +222,26 @@ hr {
     .container {
         width: 80%;
         max-width: 1150px;
+        padding-top: 30px;
     }
     
     .name {
         float: left;
+        padding: unset;
     }
 
     .main-nav {
         float: right;
     }
 
+    .profile-pic {
+        clear: right;
+    }
+
     .profile-intro {
         display: inline-block;
+        max-width: 50%;
+        float: left;
     }
 
     .one,
