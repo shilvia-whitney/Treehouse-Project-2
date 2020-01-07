@@ -144,7 +144,7 @@ hr {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .container {
         width: 90%;
         margin: 0 auto;
@@ -172,9 +172,9 @@ hr {
 
       .profile-intro {
           text-align: left;
-          display: inline-block;
-          max-width: 50%;
           float: left;
+          width: 350px;
+          height: 215px;
       }
 
       .body {
@@ -217,7 +217,7 @@ hr {
       }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .container {
         width: 80%;
         max-width: 1150px;
@@ -238,21 +238,19 @@ hr {
     }
 
     .profile-intro {
-        display: inline-block;
-        max-width: 50%;
         float: left;
+        width: 440px;
+        height: 188px;
     }
 
     .one,
     .three,
     .four,
-    .six {
-        width: 33%;
-    }
-
+    .six,
     .two,
     .five {
         width: 33%;
+        min-height: 409.44px;
     }
 
 }
